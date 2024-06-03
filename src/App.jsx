@@ -1,4 +1,3 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Login from './components/Login'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Outlet } from 'react-router-dom'
@@ -6,14 +5,12 @@ import { Outlet } from 'react-router-dom'
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Outlet />,
-    children: [
-      {
-        path: "login",
-        element: <Login />,
-      }
-    ],
+    element: <Outlet />
   },
+  {
+    path:"/login",
+    element : <Login />
+  }
 ]);
 
 // App component containing the router
