@@ -1,7 +1,5 @@
 import { useState } from "react"
 
-
-
 function Login() {
     const [formData,setFormData] = useState({
         username:'',
@@ -29,7 +27,7 @@ function Login() {
         return (
             <>
                 <h1>Login Page</h1>
-                <p>Welcome User</p> 
+                <p>Welcome, ${formData.username}</p> 
             </>
         )
     }
@@ -40,10 +38,10 @@ function Login() {
     
     <form onSubmit={(e) => handleSubmit(e)}>
         <h1>Login Page</h1>
-        {error && <>Invalid Username and Password</>}
-          <label>Username</label>
-          <input type="text" name="username" required value={formData.username || ''} onChange={e => handleChange(e)} />
-          <label>Password</label>
+        {error && <>Invalid username or password</>}<br />
+          <label>Username</label> <br />
+          <input type="text" name="username" required value={formData.username || ''} onChange={e => handleChange(e)} /><br />
+          <label>Password</label><br />
           <input type="password" name="password" value={formData.password || ''} onChange={handleChange} />
           <br />
           <button type="submit">Submit</button>
