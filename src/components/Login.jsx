@@ -27,7 +27,7 @@ function Login() {
         return (
             <>
                 <h1>Login Page</h1>
-                <p>Welcome, ${formData.username}</p> 
+                <p>Welcome, {formData.username}</p> 
             </>
         )
     }
