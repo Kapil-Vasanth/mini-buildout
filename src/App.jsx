@@ -1,13 +1,11 @@
-import Login from './components/Login'
-
-
-
+import Xstates from './components/Xstates'
 
 // App component containing the router
 function App() {
+  
   return (
     <>
-      <Login />
+      <Xstates />
     </>
   );
 }
