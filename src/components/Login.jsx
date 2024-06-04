@@ -39,9 +39,9 @@ function Login() {
     <form onSubmit={(e) => handleSubmit(e)}>
         <h1>Login Page</h1>
         {error && <>Invalid username or password</>}<br />
-          <label>Username</label> <br />
+          <label>Username</label> 
           <input type="text" name="username" required value={formData.username || ''} onChange={e => handleChange(e)} /><br />
-          <label>Password</label><br />
+          <label>Password</label>
           <input type="password" name="password" value={formData.password || ''} onChange={handleChange} />
           <br />
           <button type="submit">Submit</button>
