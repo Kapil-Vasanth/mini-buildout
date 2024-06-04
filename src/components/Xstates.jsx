@@ -70,7 +70,7 @@ function Xstates() {
           return <option key={city} value={city}>{city}</option>
         })}
       </select>
-      {formData.country && formData.state && formData.city && <p>You Selected <strong>{formData.city},</strong> {formData.state}, {formData.country}</p>}
+      {formData.country && formData.state && formData.city && <p>You selected <strong>{formData.city},</strong> {formData.state}, {formData.country}</p>}
     </>
   )
 }
