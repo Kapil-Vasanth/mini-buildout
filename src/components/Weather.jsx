@@ -47,7 +47,7 @@ function Weather() {
     <>
         <form onSubmit={handleSubmit}>
             <div>
-                <input type="search" placeholder='Enter City Name' onChange={handleChange} value={search}/>
+                <input type="text" placeholder='Enter City Name' onChange={handleChange} value={search}/>
                 <button type='submit'>Search</button>
             </div>
         </form>
