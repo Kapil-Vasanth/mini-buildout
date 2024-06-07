@@ -24,9 +24,9 @@ function Weather() {
             
         })
         .then(() => setLoading(false))
-        .catch(err => {
+        .catch(() => {
             setLoading(false)
-            alert(err)
+            alert("Failed to fetch weather data")
         })
     }
 
@@ -56,7 +56,7 @@ function Weather() {
             Loading data...
         </p>}
 
-        {weatherData && <div className="weather-cards">
+        {weatherData && !loading && <div className="weather-cards">
             <div className="weather-card">
                 <h2>Temperature</h2>
                 <span>{weatherData?.current?.temp_c} C</span>
