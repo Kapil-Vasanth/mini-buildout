@@ -30,9 +30,9 @@ function Weather() {
         })
     }
 
-    useEffect(() => {
-        fetchData();
-    },[])
+    // useEffect(() => {
+    //     fetchData();
+    // },[])
 
     
     const handleSubmit = (e) => {
